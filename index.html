@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Construa Sem Susto: quanto vai custar a sua casa de verdade?</title>
+<meta name="description" content="Kit feito por engenheiro civil para quem vai construir ou reformar: planilha, guia e checklists para estimar, controlar e conferir cada real da obra.">
+<link rel="canonical" href="https://construa.colecaosemsusto.com.br/">
+<link rel="icon" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://construa.colecaosemsusto.com.br/">
+<meta property="og:title" content="Construa Sem Susto: quanto vai custar a sua casa de verdade?">
+<meta property="og:description" content="Kit feito por engenheiro civil para quem vai construir ou reformar: planilha, guia e checklists para estimar, controlar e conferir cada real da obra.">
+<meta property="og:image" content="https://construa.colecaosemsusto.com.br/capa.png">
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;
+n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1496206385719327');fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'Kit Construa Sem Susto',value:47,currency:'BRL'});</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1496206385719327&ev=PageView&noscript=1"></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18511523344"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','AW-18511523344');</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: página de vendas longa em coluna; hero com painel da planilha ao lado, seção-âncora "gastos invisíveis" em régua de cotas, oferta e FAQ */
+:root{
+  --bg:#f4f5f3; --surface:#ffffff; --ink:#18201c; --muted:#5d6761; --line:#d8ddd8;
+  --blue:#1f5f8b; --blue-deep:#174a6d; --blue-soft:#e2edf5; --amber:#c98a12; --amber-soft:#fbf0d6;
+  --ok:#2f6b3a; --ok-bg:#e3f0e4; --bad:#9b2c2c; --bad-bg:#f7e3e1; --on-blue:#ffffff;
+  --display:"Archivo","Segoe UI",system-ui,sans-serif; --body:"Source Sans 3","Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121614; --surface:#1b211e; --ink:#e7ece9; --muted:#9ba59f; --line:#313a35;
+  --blue:#7db8e0; --blue-deep:#1d4560; --blue-soft:#1b2f3d; --amber:#f0c46a; --amber-soft:#3a2e12;
+  --ok:#8fd19a; --ok-bg:#1d3322; --bad:#f19a92; --bad-bg:#3d1f1d; --on-blue:#ffffff; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121614; --surface:#1b211e; --ink:#e7ece9; --muted:#9ba59f; --line:#313a35;
+  --blue:#7db8e0; --blue-deep:#1d4560; --blue-soft:#1b2f3d; --amber:#f0c46a; --amber-soft:#3a2e12;
+  --ok:#8fd19a; --ok-bg:#1d3322; --bad:#f19a92; --bad-bg:#3d1f1d; --on-blue:#ffffff; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px}
+h1,h2,h3{font-family:var(--display);line-height:1.12;margin:0;text-wrap:balance}
+p{margin:0}
+.kicker{font:500 .78rem var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--blue)}
+a.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--amber);color:#1a1405;font:700 1.05rem var(--display);text-decoration:none;padding:16px 26px;border-radius:8px;min-height:52px}
+a.cta:hover{filter:brightness(1.06)} a.cta:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.small{font-size:.88rem;color:var(--muted)}
+
+/* hero */
+.hero{background:var(--blue-deep);color:var(--on-blue);background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:22px 22px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:56px 64px}
+.hero .kicker{color:#cfe3f2}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.3rem);font-weight:800;margin:12px 0 18px}
+.hero p.lead{font-size:1.15rem;color:#e3eef6;max-width:34ch;margin-bottom:26px}
+.hero .by{margin-top:18px;font-size:.92rem;color:#cfe3f2}
+.hero > .wrap > div{min-width:0}
+/* painel simulado */
+.panel{background:var(--surface);color:var(--ink);border-radius:10px;box-shadow:0 18px 40px rgba(0,0,0,.28);overflow:hidden}
+.panel .bar{display:flex;gap:6px;padding:10px 12px;background:var(--blue);}
+.panel .bar span{font:500 .7rem var(--mono);color:#fff;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,.14)}
+.panel .bar span.on{background:#fff;color:var(--blue-deep)}
+.panel .tbl{overflow-x:auto}
+.panel table{width:100%;border-collapse:collapse;font-size:.82rem;font-variant-numeric:tabular-nums}
+.panel th,.panel td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+.panel th{font:600 .68rem var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.panel td.n{text-align:right;font-family:var(--mono);font-size:.78rem}
+.pill{font:600 .7rem var(--body);padding:2px 8px;border-radius:99px}
+.p-ok{background:var(--ok-bg);color:var(--ok)} .p-warn{background:var(--amber-soft);color:var(--amber)} .p-bad{background:var(--bad-bg);color:var(--bad)}
+.panel .foot{padding:10px 12px;font-size:.75rem;color:var(--muted)}
+
+section{padding-block:64px}
+section h2{font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:800;margin:10px 0 16px}
+.intro{max-width:62ch;color:var(--muted);font-size:1.08rem}
+
+/* gastos invisíveis: régua de cotas */
+.ruler{margin-top:34px;display:grid;gap:10px}
+.rrow{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr) 7.5rem;gap:14px;align-items:center}
+.rrow .lbl{font-weight:600;min-width:0}
+.rrow .track{position:relative;height:14px;border-left:2px solid var(--ink);border-right:2px solid var(--ink)}
+.rrow .track::before{content:"";position:absolute;left:0;right:0;top:6px;border-top:1.5px solid var(--muted)}
+.rrow .fill{position:absolute;left:0;top:2px;height:10px;background:var(--amber);border-radius:2px}
+.rrow .val{font:500 .9rem var(--mono);text-align:right}
+.rrow.base .fill{background:var(--blue)}
+.total{margin-top:22px;padding:18px 20px;background:var(--amber-soft);border-radius:10px;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
+.total b{font:800 1.6rem var(--display);color:var(--amber)}
+
+/* dores */
+.pains{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:18px;margin-top:28px}
+.pain{border-top:3px solid var(--ink);padding-top:14px}
+.pain h3{font-size:1.1rem;margin-bottom:6px}
+.pain p{color:var(--muted)}
+
+/* conteúdo */
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.items{display:grid;gap:0;margin-top:26px}
+.item{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.item:first-child{border-top:1px solid var(--line)}
+.item .tag{font:500 .72rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--blue);padding-top:4px}
+.item h3{font-size:1.15rem;margin-bottom:6px}
+.item p{color:var(--muted)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:18px;margin-top:28px;padding:0;list-style:none}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.steps li::before{content:"Passo " counter(s);display:block;font:500 .72rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:26px}
+.two > div{min-width:0}
+.two ul{margin:10px 0 0;padding-left:20px;display:grid;gap:6px}
+.two h3{font-size:1.1rem}
+
+.author{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
+.badge{width:96px;height:96px;border-radius:50%;background:var(--blue-soft);display:grid;place-items:center;font:800 1.9rem var(--display);color:var(--blue)}
+
+/* oferta */
+.offer{background:var(--blue-deep);color:var(--on-blue);border-radius:14px;padding:36px;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+.offer ul{margin:12px 0 0;padding-left:20px;display:grid;gap:6px;color:#e3eef6}
+.offer .price{font:800 3.2rem var(--display);line-height:1}
+.offer .price small{font-size:1rem;font-weight:500;color:#cfe3f2}
+.offer .side{display:grid;gap:14px;justify-items:start}
+.offer .note{font-size:.88rem;color:#cfe3f2}
+.guar{display:flex;gap:16px;align-items:flex-start;margin-top:26px;padding:18px 20px;border:1px dashed var(--line);border-radius:10px}
+.guar b{font-family:var(--display)}
+
+details{border-bottom:1px solid var(--line);padding:16px 0}
+details summary{cursor:pointer;font-weight:700;font-family:var(--display);list-style-position:outside}
+details p{margin-top:8px;color:var(--muted);max-width:68ch}
+.launch{margin-top:10px;font-size:.95rem;color:#f0c46a;font-weight:600}
+.launch-tag{display:inline-block;margin:0 0 8px;padding:4px 10px;border-radius:999px;background:var(--amber-soft);color:var(--amber);font-weight:700;font-size:.85rem}
+.offer .price small{display:block;margin-top:10px;line-height:1.4}
+.video-sec .video{margin-top:18px;max-width:420px;aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:#000}
+.video-sec .video iframe{width:100%;height:100%;border:0;display:block}
+footer{padding-block:36px 48px;font-size:.84rem;color:var(--muted);border-top:1px solid var(--line)}
+footer p{max-width:80ch}
+
+@media (max-width:760px){
+  .hero .wrap,.offer,.two{grid-template-columns:1fr}
+  .rrow{grid-template-columns:minmax(0,1fr) 6.5rem}
+  .rrow .track{grid-column:1 / -1;order:3}
+  .item{grid-template-columns:1fr;gap:4px}
+  .author{grid-template-columns:1fr}
+  .offer{padding:24px}
+}
+@media (prefers-reduced-motion:no-preference){ .rrow .fill{transition:width .6s ease} }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Para quem vai construir ou reformar</span>
+      <h1>Quanto vai custar a sua casa de verdade?</h1>
+      <p class="lead">Um kit feito por engenheiro civil para você estimar, controlar e conferir cada real da obra, do orçamento à entrega das chaves.</p>
+      <a class="cta" href="https://pay.hotmart.com/M107992998V?checkoutMode=10">Quero o kit por R$ 47</a>
+      <p class="launch">Preço de lançamento até 30/11. A partir de 01/12, R$ 67.</p>
+      <p class="by">Karl R. Knosel · Engenheiro Civil</p>
+    </div>
+    <div>
+      <div class="panel" role="img" aria-label="Exemplo da aba Resumo do Painel da Obra, com previsto e realizado por etapa">
+        <div class="bar"><span>Orçamento</span><span class="on">Resumo</span><span>Pagamentos</span><span>Gastos</span></div>
+        <div class="tbl"><table>
+          <thead><tr><th>Etapa</th><th>Previsto</th><th>Realizado</th><th>Situação</th></tr></thead>
+          <tbody>
+            <tr><td>Preliminares</td><td class="n">7.483</td><td class="n">5.250</td><td><span class="pill p-ok">Dentro</span></td></tr>
+            <tr><td>Fundação</td><td class="n">24.000</td><td class="n">28.100</td><td><span class="pill p-bad">Estourou</span></td></tr>
+            <tr><td>Estrutura</td><td class="n">71.091</td><td class="n">32.400</td><td><span class="pill p-ok">Dentro</span></td></tr>
+            <tr><td>Alvenaria</td><td class="n">29.933</td><td class="n">14.100</td><td><span class="pill p-ok">Dentro</span></td></tr>
+            <tr><td>Projetos e ART</td><td class="n">12.000</td><td class="n">12.000</td><td><span class="pill p-warn">Atenção</span></td></tr>
+          </tbody>
+        </table></div>
+        <p class="foot">Obra fictícia de exemplo que acompanha o kit · valores em R$</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="video-sec">
+  <div class="wrap">
+    <span class="kicker">Em 43 segundos</span>
+    <h2>A conta que quase todo mundo faz errado</h2>
+    <div class="video"><iframe src="https://www.youtube.com/embed/Tj8-8AO--X4?rel=0" title="Quanto vai custar a sua casa de verdade?" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">Os gastos invisíveis</span>
+    <h2>A conta "área × CUB" deixa de fora um pedaço grande da obra</h2>
+    <p class="intro">O CUB, o custo por metro quadrado que todo mundo usa como referência, não inclui fundação, projetos, impostos e taxas, equipamentos e outros itens, como a própria norma que o define declara (ABNT NBR 12721). Veja um exemplo de casa térrea de 120 m²:</p>
+    <div class="ruler" aria-label="Comparação entre a base do CUB e os itens que ficam fora dela">
+      <div class="rrow base"><span class="lbl">Base: 120 m² × CUB R1-N</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="val">R$ 374.162</span></div>
+      <div class="rrow"><span class="lbl">Fundação</span><span class="track"><span class="fill" style="width:6.4%"></span></span><span class="val">+ R$ 24.000</span></div>
+      <div class="rrow"><span class="lbl">Muro, calçada e portão</span><span class="track"><span class="fill" style="width:4%"></span></span><span class="val">+ R$ 15.000</span></div>
+      <div class="rrow"><span class="lbl">Projetos e ART</span><span class="track"><span class="fill" style="width:3.2%"></span></span><span class="val">+ R$ 12.000</span></div>
+      <div class="rrow"><span class="lbl">INSS da obra</span><span class="track"><span class="fill" style="width:3.2%"></span></span><span class="val">+ R$ 12.000</span></div>
+      <div class="rrow"><span class="lbl">Movimento de terra</span><span class="track"><span class="fill" style="width:1.6%"></span></span><span class="val">+ R$ 6.000</span></div>
+      <div class="rrow"><span class="lbl">Chuveiros, luminárias, aquecedor</span><span class="track"><span class="fill" style="width:1.6%"></span></span><span class="val">+ R$ 6.000</span></div>
+      <div class="rrow"><span class="lbl">Alvará, habite-se e taxas</span><span class="track"><span class="fill" style="width:1.3%"></span></span><span class="val">+ R$ 5.000</span></div>
+      <div class="rrow"><span class="lbl">Taxas de ligação</span><span class="track"><span class="fill" style="width:0.8%"></span></span><span class="val">+ R$ 3.000</span></div>
+    </div>
+    <div class="total"><span>O que a conta rápida deixa de fora</span><b>+ R$ 83.000</b><span class="small">cerca de 22% a mais, antes da reserva para imprevistos</span></div>
+    <p class="small" style="margin-top:12px">Exemplo ilustrativo da planilha que acompanha o kit, com o CUB R1-N de Minas Gerais de setembro de 2026 (R$ 3.118,02/m², Sinduscon-MG). Use o CUB do seu estado: os valores da sua obra dependem da região, do projeto e do terreno.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">Se você já passou por isso</span>
+    <h2>Obra estoura por motivos bem conhecidos</h2>
+    <div class="pains">
+      <div class="pain"><h3>Pagou antes de ver pronto</h3><p>O empreiteiro pediu adiantamento, recebeu e depois sumiu ou passou a andar devagar.</p></div>
+      <div class="pain"><h3>O extra que ninguém anotou</h3><p>"Já que está aberto, aproveita e..." Dez pequenos extras de R$ 800 viram R$ 8.000 no fim.</p></div>
+      <div class="pain"><h3>Gastos no caderno e no WhatsApp</h3><p>Notas espalhadas, Pix sem descrição, e ninguém sabe quanto já foi para cada etapa.</p></div>
+      <div class="pain"><h3>Três orçamentos que não se comparam</h3><p>Cada empreiteiro inclui uma coisa diferente, e o mais barato acaba sendo o mais caro.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">O que vem no kit</span>
+    <h2>Tudo para decidir, pagar e conferir com segurança</h2>
+    <div class="items">
+      <div class="item"><span class="tag">Planilha</span><div><h3>Painel da Obra</h3><p>Você informa a área, o projeto-padrão (R1-B, R1-N ou R1-A) e o CUB do seu estado, e o painel monta a estimativa por etapa, soma o que o CUB não cobre e mostra se a sua verba fecha a conta. Durante a obra, lance cada gasto em segundos e veja previsto x realizado, com alerta de estouro e fluxo de caixa mês a mês.</p></div></div>
+      <div class="item"><span class="tag">Planilha</span><div><h3>Pagamento por etapa conferida</h3><p>Lance o valor contratado e o percentual executado. O painel mostra quanto pode ser liberado e avisa, em vermelho, quando você pagou mais do que foi feito.</p></div></div>
+      <div class="item"><span class="tag">Planilha</span><div><h3>Comparador de propostas e registro de extras</h3><p>Até três empreiteiros lado a lado, item por item, com os itens que ficaram sem preço destacados. E uma aba para registrar cada serviço extra antes de executar, com a aprovação por escrito.</p></div></div>
+      <div class="item"><span class="tag">Guia PDF</span><div><h3>Guia do proprietário</h3><p>32 páginas: o que precisa existir antes de começar, o que o CUB não cobre, formas de contratar e o que exigir no contrato, como pagar por medição, documentos que você deve receber na entrega, prazos de garantia por parte da casa, prazos para reclamar, manutenção depois da entrega e regularização na Receita e no cartório.</p></div></div>
+      <div class="item"><span class="tag">Checklists</span><div><h3>Pré-conferência do proprietário</h3><p>Para imprimir e levar à obra antes de cada pagamento, da fundação à entrega das chaves. O que você consegue observar e perguntar, sem precisar ser engenheiro.</p></div></div>
+      <div class="item"><span class="tag">Planilha</span><div><h3>Manutenção da casa</h3><p>Plano com mais de 20 itens, data da próxima manutenção, alerta de atraso e registro de cada serviço. É o registro que prova a manutenção na hora de acionar a garantia.</p></div></div>
+      <div class="item"><span class="tag">Exemplo</span><div><h3>Obra de exemplo preenchida</h3><p>A mesma planilha com uma casa fictícia completa, para você ver como fica antes de começar a sua.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">Base técnica</span>
+    <h2>Escrito com base em normas técnicas e na lei</h2>
+    <p class="intro">O conteúdo foi elaborado por engenheiro civil a partir da leitura das normas da ABNT e da legislação que tratam de custo, contratação, garantia e manutenção de obras, traduzidas para quem nunca construiu.</p>
+    <div class="two">
+      <div><h3>Normas técnicas (ABNT)</h3><ul>
+        <li>NBR 12721:2006: custos unitários e CUB</li>
+        <li>NBR 12722:1992: serviços de uma obra</li>
+        <li>NBR 15575-1:2025: desempenho e vida útil</li>
+        <li>NBR 17170:2022: prazos de garantia</li>
+        <li>NBR 14037:2024: manual da casa</li>
+        <li>NBR 5674:2024: manutenção</li>
+      </ul></div>
+      <div><h3>Legislação</h3><ul>
+        <li>Código Civil: contrato de empreitada e garantia de 5 anos</li>
+        <li>Código de Defesa do Consumidor</li>
+        <li>Leis 6.496/1977 e 12.378/2010: ART e RRT</li>
+        <li>Instruções da Receita Federal sobre obra de pessoa física (CNO e regularização)</li>
+      </ul></div>
+    </div>
+    <p class="small" style="margin-top:14px">O kit cita as normas, mas não as reproduz nem as substitui. Não é orientação jurídica nem contábil.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">Como funciona</span>
+    <h2>15 minutos para começar, 15 minutos por semana para manter</h2>
+    <ol class="steps">
+      <li>Preencha os dados da obra e veja a estimativa e se a sua verba fecha.</li>
+      <li>Compare as propostas e contrate com pagamento por etapa.</li>
+      <li>Antes de cada pagamento, confira a etapa com o checklist e lance o percentual executado.</li>
+      <li>Uma vez por semana, lance os gastos e olhe o Resumo. Amarelo pede atenção, vermelho estourou.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">É para você?</span>
+    <h2>Feito para o dono da obra</h2>
+    <div class="two">
+      <div><h3>É para você se</h3><ul>
+        <li>vai construir ou reformar a casa e quer saber para onde vai cada real;</li>
+        <li>vai contratar empreiteiro e quer pagar só pelo que foi feito;</li>
+        <li>usa celular e computador e consegue preencher uma planilha simples (funciona no Excel e no Google Planilhas).</li>
+      </ul></div>
+      <div><h3>Não é para você se</h3><ul>
+        <li>procura um curso para aprender a construir com as próprias mãos;</li>
+        <li>espera um orçamento pronto e exato da sua obra (isso exige projeto e um profissional);</li>
+        <li>quer substituir o engenheiro ou o arquiteto. O kit ajuda você a trabalhar melhor com eles.</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap author">
+    <div class="badge" aria-hidden="true">KK</div>
+    <div>
+      <span class="kicker">Quem fez</span>
+      <h2>Karl R. Knosel, Engenheiro Civil</h2>
+      <p class="intro">Reuni neste kit o que o dono da obra precisa controlar e que ninguém costuma explicar: como estimar sem se enganar, como pagar sem adiantar e o que conferir antes de liberar cada etapa. A linguagem é simples, para quem nunca construiu.</p>
+    </div>
+  </div>
+</section>
+
+<section id="oferta">
+  <div class="wrap">
+    <div class="offer">
+      <div>
+        <span class="kicker" style="color:#cfe3f2">Kit Construa Sem Susto</span>
+        <h2 style="color:var(--on-blue)">Acesso imediato, para usar na obra inteira</h2>
+        <ul>
+          <li>Painel da Obra (Excel e Google Planilhas)</li>
+          <li>Obra de exemplo preenchida</li>
+          <li>Guia do proprietário em PDF</li>
+          <li>Checklists de pré-conferência para imprimir</li>
+          <li>Quadro de garantias e plano de manutenção</li>
+          <li>Atualizações da versão 1</li>
+        </ul>
+      </div>
+      <div class="side">
+        <p class="launch-tag">Preço de lançamento até 30/11</p>
+        <div class="price">R$ 47 <small>à vista ou em até 12× no cartão. A partir de 01/12, o kit passa a custar R$ 67.</small></div>
+        <a class="cta" href="https://pay.hotmart.com/M107992998V?checkoutMode=10" id="botao-compra">Quero o kit agora</a>
+        <p class="note">Pagamento processado pela Hotmart, com cartão, Pix ou boleto. Você recebe o acesso por e-mail logo após a confirmação.</p>
+      </div>
+    </div>
+    <div class="guar">
+      <div><b>Garantia de 7 dias.</b> Se o kit não for útil para a sua obra, peça o reembolso pela Hotmart em até 7 dias após a compra e receba 100% do valor, sem precisar explicar o motivo.</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">Dúvidas frequentes</span>
+    <h2>Perguntas comuns</h2>
+    <details><summary>Serve para reforma ou só para construção?</summary><p>Serve para os dois. Em reforma, use só as etapas que fazem parte da sua obra. O controle de gastos, os pagamentos por etapa, o comparador e os extras funcionam igual.</p></details>
+    <details><summary>A planilha me dá o valor exato da obra?</summary><p>Não. Ela dá uma estimativa de referência, a partir do CUB e dos itens que ficam fora dele, para você saber se a sua verba está no caminho certo. O valor exato depende de projeto e de orçamento detalhado. Depois que você tiver as propostas reais, a planilha passa a controlar esses valores.</p></details>
+    <details><summary>Preciso saber Excel?</summary><p>Não. Você só preenche as células amarelas. As fórmulas ficam protegidas contra apagamento acidental, e a obra de exemplo mostra como tudo fica preenchido.</p></details>
+    <details><summary>Funciona no celular?</summary><p>Funciona no Google Planilhas e no app do Excel, mas o preenchimento inicial é mais confortável no computador. Lançar gastos no dia a dia pelo celular funciona bem.</p></details>
+    <details><summary>Isso substitui o engenheiro ou o arquiteto?</summary><p>Não. Decisões técnicas, como fundação, estrutura e instalações, são do profissional habilitado. O kit organiza o dinheiro e ajuda você a fazer as perguntas certas a ele.</p></details>
+    <details><summary>Os valores do exemplo servem para o meu estado?</summary><p>Não. O exemplo usa o CUB de Minas Gerais só para ilustrar. A planilha pede o CUB do seu estado e do mês atual, que o Sinduscon da sua região publica todo mês.</p></details>
+    <details><summary>As normas da ABNT vêm junto?</summary><p>Não. As normas são vendidas pela ABNT. O kit traduz o que elas dizem sobre custo, garantia e manutenção em linguagem simples e cita cada uma, para você saber onde está cada regra.</p></details>
+    <details><summary>Como recebo o kit?</summary><p>Logo após a confirmação do pagamento, você recebe por e-mail o acesso à área de membros da Hotmart, onde baixa os arquivos.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Construa Sem Susto · Karl R. Knosel, Engenheiro Civil. Material educativo e informativo: organiza o controle financeiro e a conferência da obra pelo proprietário. Não é prestação de serviço de engenharia e não substitui projeto, orçamento detalhado, acompanhamento técnico com ART/RRT, orientação jurídica ou contábil. Valores apresentados são exemplos ilustrativos. Sem garantia de resultado. Versão 1.1, outubro de 2026.</p>
+  </div>
+</footer>
+<p style="text-align:center;font-size:13px;margin:0 0 24px"><a href="privacidade.html" style="color:inherit">Política de privacidade</a></p>
+</body>
+</html>
