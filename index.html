@@ -353,5 +353,10 @@ footer p{max-width:80ch}
   </div>
 </footer>
 <p style="text-align:center;font-size:13px;margin:0 0 24px"><a href="privacidade.html" style="color:inherit">Política de privacidade</a></p>
+<script>(function(){var q=new URLSearchParams(location.search);
+var src=q.get('src')||'site',sck=q.get('sck');
+document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach(function(a){
+var u=new URL(a.href);u.searchParams.set('src',src);if(sck)u.searchParams.set('sck',sck);a.href=u.toString();});
+})();</script>
 </body>
 </html>
